@@ -1,0 +1,26 @@
+//package cn.note.service.toolkit.formatter;
+//
+//import com.google.googlejavaformat.java.Formatter;
+//import com.google.googlejavaformat.java.FormatterException;
+//
+///**
+// * <!--format java 1.8之后需要jdk11 +-->
+// * <dependency>
+// * <groupId>com.google.googlejavaformat</groupId>
+// * <artifactId>google-java-format</artifactId>
+// * <version>1.7</version>
+// * </dependency>
+// */
+//public class JavaFormatter {
+//
+//    public static void main(String[] args) {
+//        try {
+//            String sourceCode = new Formatter().formatSource("public class JavaFormatter {    public static void main(String[] args) {        \n" +
+//                    "try {   String sourceCode = new Formatter().formatSource(\"\");       System.out.println(sourceCode);\n" +
+//                    "        } catch (FormatterException e) {            e.printStackTrace();        }    }}");
+//            System.out.println(sourceCode);
+//        } catch (FormatterException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024"
+     viewBox="0 0 1024 1024" fill="none">
+    <defs>
+        <rect id="path_0" x="0" y="0" width="1024" height="1024"/>
+    </defs>
+    <g opacity="1" transform="translate(1 1)  rotate(0 512 512)">
+        <mask id="bg-mask-0" fill="white">
+            <use xlink:href="#path_0"></use>
+        </mask>
+        <g mask="url(#bg-mask-0)"></g>
+    </g>
+</svg>

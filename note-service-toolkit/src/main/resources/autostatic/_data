@@ -1,0 +1,2 @@
+const menuJson = {$data}
+window.menuJson = menuJson

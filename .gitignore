@@ -1,0 +1,12 @@
+.settings/
+target/
+logs/
+*.classpath
+.idea/
+*.iml
+.metadata/
+RemoteSystemsTempFiles/
+*.project
+.recommenders/
+*.log
+.history/

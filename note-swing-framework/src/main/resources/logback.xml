@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Console 输出设置 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{30} \(%file:%line\) : %m %n</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+    <appender name="FILELOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/JNoteHelper.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/JNoteHelper.%d</fileNamePattern>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+            <MaxHistory>2</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d %p (%file:%line\)- %m%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="async_log" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <appender-ref ref="FILELOG"/>
+    </appender>
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="async_log"/>
+    </root>
+</configuration>  

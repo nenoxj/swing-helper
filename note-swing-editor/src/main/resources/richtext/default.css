@@ -1,0 +1,49 @@
+/*
+支持的CSS
+font-family
+font-style
+font-size (supports relative units)
+font-weight
+font
+color
+background-color (with the exception of transparent)
+background-image
+background-repeat
+background-position
+background
+background-repeat
+text-decoration (with the exception of blink and overline)
+vertical-align (only sup and super)
+text-align (justify is treated as center)
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin
+padding-top
+padding-right
+padding-bottom
+padding-left
+border-style (only supports inset, outset and none)
+list-style-type
+list-style-position
+*/
+body {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.code-dark {
+    background-color: #272822;
+    color: #f8f8f2;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0px 3px;
+    /*font-size: 10px;*/
+    font-weight: 300;
+    font-family: Consolas, monospace, Monaco, 'Andale Mono', 'Ubuntu Mono',微软雅黑;
+    border-style: hidden;
+}
+
+.hr-dark {
+    background-color: #23241f;
+}
